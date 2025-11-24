@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Fila de Atendimento - Aluno</title>
+<style>
+    body { font-family: Arial; background: #f6f6f6; padding: 20px; }
+    .card { background: white; padding: 20px; border-radius: 10px; max-width: 400px; margin: auto; }
+    button { background: #e91e63; color: white; padding: 10px; border: none; width: 100%; border-radius: 5px; }
+    input, select { width: 100%; padding: 10px; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<div class="card">
+    <h2>Entrar na Fila</h2>
+    <input id="nome" placeholder="Seu nome">
+    <select id="curso">
+        <option value="">Selecione o curso</option>
+        <option>Psicologia</option>
+        <option>Direito</option>
+        <option>Enfermagem</option>
+    </select>
+    <input id="assunto" placeholder="Assunto do atendimento">
+    <label><input type="checkbox" id="preferencial"> Atendimento Preferencial</label>
+    <button onclick="entrarFila()">Entrar na Fila</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
